@@ -1,0 +1,34 @@
+server:
+  port: 8082
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    driver-Class-name: com.mysql.cj.jdbc.Driver
+    password: Root@localhost22
+    url: jdbc:mysql://localhost:3306/universitydb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+welcome:
+  message: <h1>Welcome to Spring Boot Master Class!!</h1>
+
+___
+
+spring:
+  profiles: qa
+  datasource:
+    driver-Class-name: com.mysql.cj.jdbc.Driver
+    password: Root@localhost22
+    url: jdbc:mysql://localhost:3306/universitydb
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+welcome:
+  message: <h1>Welcome to Spring Boot Master Class!!</h1>
